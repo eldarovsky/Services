@@ -8,8 +8,11 @@
 import UIKit
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate {
 
+// MARK: - App Delegate
+final class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    // MARK: Public Methods
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         return true
     }

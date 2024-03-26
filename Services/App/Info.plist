@@ -19,9 +19,19 @@
 			</array>
 		</dict>
 	</dict>
-	<key>UIUserInterfaceStyle</key>
-	<string>Dark</string>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>https://vk.com/</string>
+		<string>https://my.games/</string>
+		<string>https://sferum.ru/?p=start</string>
+		<string>https://youla.ru/</string>
+		<string>https://samokat.ru/</string>
+		<string>https://citydrive.ru/</string>
+		<string>https://cloud.mail.ru/home/</string>
+		<string>https://vseapteki.ru/</string>
+		<string>https://calendar.mail.ru/</string>
+	</array>
 </dict>
 </plist>

@@ -13,6 +13,8 @@
 		B812CE312BB28AAB0040DF3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B812CE302BB28AAB0040DF3E /* Assets.xcassets */; };
 		B812CE342BB28AAB0040DF3E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B812CE332BB28AAB0040DF3E /* Base */; };
 		B812CE442BB2959A0040DF3E /* result.json in Resources */ = {isa = PBXBuildFile; fileRef = B812CE432BB2959A0040DF3E /* result.json */; };
+		B812CE462BB29EE00040DF3E /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = B812CE452BB29EE00040DF3E /* Models.swift */; };
+		B812CE482BB29F940040DF3E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B812CE472BB29F940040DF3E /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		B812CE332BB28AAB0040DF3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B812CE352BB28AAB0040DF3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B812CE432BB2959A0040DF3E /* result.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = result.json; sourceTree = "<group>"; };
+		B812CE452BB29EE00040DF3E /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		B812CE472BB29F940040DF3E /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +62,8 @@
 			children = (
 				B812CE3B2BB28C6E0040DF3E /* App */,
 				B812CE402BB294C00040DF3E /* Business Logic */,
-				B812CE3E2BB294790040DF3E /* Scenes */,
+				B812CE3D2BB294280040DF3E /* Model */,
+				B812CE3E2BB294790040DF3E /* ViewControllers */,
 				B812CE3C2BB28C780040DF3E /* Resources */,
 			);
 			path = Services;
@@ -87,40 +92,25 @@
 		B812CE3D2BB294280040DF3E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B812CE452BB29EE00040DF3E /* Models.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		B812CE3E2BB294790040DF3E /* Scenes */ = {
-			isa = PBXGroup;
-			children = (
-				B812CE3F2BB2949B0040DF3E /* ServicesScene */,
-			);
-			path = Scenes;
-			sourceTree = "<group>";
-		};
-		B812CE3F2BB2949B0040DF3E /* ServicesScene */ = {
+		B812CE3E2BB294790040DF3E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				B812CE2B2BB28AAA0040DF3E /* ServicesViewController.swift */,
 			);
-			path = ServicesScene;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		B812CE402BB294C00040DF3E /* Business Logic */ = {
 			isa = PBXGroup;
 			children = (
-				B812CE3D2BB294280040DF3E /* Model */,
-				B812CE412BB294D40040DF3E /* Services */,
+				B812CE472BB29F940040DF3E /* NetworkManager.swift */,
 			);
 			path = "Business Logic";
-			sourceTree = "<group>";
-		};
-		B812CE412BB294D40040DF3E /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 		B812CE422BB295870040DF3E /* Data */ = {
@@ -204,7 +194,9 @@
 			files = (
 				B812CE2C2BB28AAA0040DF3E /* ServicesViewController.swift in Sources */,
 				B812CE282BB28AAA0040DF3E /* AppDelegate.swift in Sources */,
+				B812CE482BB29F940040DF3E /* NetworkManager.swift in Sources */,
 				B812CE2A2BB28AAA0040DF3E /* SceneDelegate.swift in Sources */,
+				B812CE462BB29EE00040DF3E /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,9 +346,10 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -388,9 +381,10 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

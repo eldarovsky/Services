@@ -7,14 +7,17 @@
 
 import UIKit
 
-class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+// MARK: - Scene Delegate
+final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
+    // MARK: Public Properties
     var window: UIWindow?
 
+    // MARK: Public Methods
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
 
-        let startVC = ServicesViewController()
-        let navigationControllerVC = UINavigationController(rootViewController: startVC)
+        let servicesVC = ServicesViewController()
+        let navigationControllerVC = UINavigationController(rootViewController: servicesVC)
 
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
