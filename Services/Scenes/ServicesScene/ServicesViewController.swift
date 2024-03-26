@@ -7,7 +7,15 @@
 
 import UIKit
 
-class ServicesViewController: UIViewController {
+//class ServicesViewController: UIViewController {
+//
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        view.backgroundColor = .white
+//    }
+//}
+
+class ServicesViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
