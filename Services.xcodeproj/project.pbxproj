@@ -62,7 +62,8 @@
 			children = (
 				B812CE3B2BB28C6E0040DF3E /* App */,
 				B812CE402BB294C00040DF3E /* Business Logic */,
-				B812CE3E2BB294790040DF3E /* Scenes */,
+				B812CE3D2BB294280040DF3E /* Model */,
+				B812CE3E2BB294790040DF3E /* ViewControllers */,
 				B812CE3C2BB28C780040DF3E /* Resources */,
 			);
 			path = Services;
@@ -96,37 +97,20 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		B812CE3E2BB294790040DF3E /* Scenes */ = {
-			isa = PBXGroup;
-			children = (
-				B812CE3F2BB2949B0040DF3E /* ServicesScene */,
-			);
-			path = Scenes;
-			sourceTree = "<group>";
-		};
-		B812CE3F2BB2949B0040DF3E /* ServicesScene */ = {
+		B812CE3E2BB294790040DF3E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				B812CE2B2BB28AAA0040DF3E /* ServicesViewController.swift */,
 			);
-			path = ServicesScene;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		B812CE402BB294C00040DF3E /* Business Logic */ = {
 			isa = PBXGroup;
 			children = (
-				B812CE3D2BB294280040DF3E /* Model */,
-				B812CE412BB294D40040DF3E /* Services */,
-			);
-			path = "Business Logic";
-			sourceTree = "<group>";
-		};
-		B812CE412BB294D40040DF3E /* Services */ = {
-			isa = PBXGroup;
-			children = (
 				B812CE472BB29F940040DF3E /* NetworkManager.swift */,
 			);
-			path = Services;
+			path = "Business Logic";
 			sourceTree = "<group>";
 		};
 		B812CE422BB295870040DF3E /* Data */ = {
